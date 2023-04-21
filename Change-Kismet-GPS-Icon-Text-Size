@@ -22,3 +22,5 @@ gpsicon = $('i.icon', this);
             gpsicon = $('<i>', {
                 class: "icon fa fa-map-marker kg-icon-base"
          });
+         $("#topbar").css({"background-color":"red"});
+        } 
