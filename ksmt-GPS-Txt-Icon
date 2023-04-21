@@ -1,0 +1,24 @@
+# Shared by MrBill / twitter.com/SecureThisNow
+# Optional: Increase size and type of GPS Icon
+# sudo vi /usr/share/kismet/httpd/css/jquery.kismet.gps.css
+# (or if compiled from source)
+# sudo vi /usr/local/share/kismet/httpd/css/jquery.kismet.gps.css
+# Change font-size to 30px
+
+div.kg-top-icon {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: normal; (edited)
+
+
+# sudo vi /usr/share/kismet/httpd/js/jquery.kismet.gps.js
+# (or if compiled from source)
+# sudo vi /usr/local/share/kismet/httpd/js/jquery.kismet.gps.js
+
+# Change ‘fa-crosshairs’ to fa-map-marker’
+
+gpsicon = $('i.icon', this);
+        if (gpsicon.length == 0) {
+            gpsicon = $('<i>', {
+                class: "icon fa fa-map-marker kg-icon-base"
+         });
